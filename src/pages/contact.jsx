@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+
 import '../styles/contact.css';
 import emailjs from 'emailjs-com';
 import { FaGithub, FaLinkedin, FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
@@ -7,25 +8,37 @@ const Contact = () => {
   const form = useRef();
   const [status, setStatus] = useState('');
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = async (e) => {
+  e.preventDefault();
 
-    emailjs.sendForm(
-      'service_hshjqoj',  
-      'template_9cji9ml',   
+  const formData = new FormData(form.current);
+  const name = formData.get('name');
+  const email = formData.get('email');
+  const message = formData.get('message');
+
+  try {
+   
+    const res = await fetch('http://localhost:5000/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, message }),
+    });
+
+    if (!res.ok) throw new Error('DB store failed');
+    await emailjs.sendForm(
+        'service_hshjqoj',  
+      'template_9cji9ml', 
       form.current,
-      'ecXh21KP0AIxd-XdS'      
-    ).then(
-      () => {
-        setStatus('Message sent successfully!');
-        form.current.reset();
-      },
-      (error) => {
-        setStatus('Failed to send. Please try again.');
-        console.error(error);
-      }
-    );
-  };
+       'ecXh21KP0AIxd-XdS');
+
+
+    setStatus('Message sent successfully!');
+    form.current.reset();
+  } catch (error) {
+    console.error(error);
+    setStatus('Failed to send. Please try again.');
+  }
+};
 
   return (
     <section className="contact-section">

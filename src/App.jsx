@@ -6,6 +6,10 @@ import Home from './pages/home'
 import Skills from './pages/skills'
 import Achievements from './pages/achievements'
 import Contact from './pages/contact'
+import Admin from './pages/admin'
+import Login from './pages/login'
+import ProtectedRoute from './pages/ProtectedRoute'
+
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -25,10 +29,17 @@ function App() {
          <Route path="/skills" element={<Skills />} />
           <Route path="/achievements" element={<Achievements />} />
            <Route path="/contact" element={<Contact />} />
-          
-
+                 <Route
+        path="/admin"
+        element={
+          <ProtectedRoute>
+            <Admin />
+          </ProtectedRoute>
+        }
+      />
+       <Route path="/login" element={<Login />} />
       </Routes>
-    </Router>
+</Router>
   )
 }
 
