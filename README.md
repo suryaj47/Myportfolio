@@ -81,7 +81,7 @@ A modern, responsive personal portfolio showcasing my projects, skills, achievem
 ## 🔐 Preset Login Credentials (For Test Login)
 
 - **Username:** `admin`  
-- **Password:** `password123`
+- **Password:** `admin123`
 
 ---
 
@@ -97,9 +97,9 @@ A modern, responsive personal portfolio showcasing my projects, skills, achievem
 
 ## 📫 Contact
 
-- 📧 Email: your.email@example.com  
-- 🔗 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)  
-- 🧑‍💻 GitHub: [github.com/your-username](https://github.com/your-username)
+- 📧 Email: suryaj4747.email@example.com  
+- 🔗 LinkedIn: https://www.linkedin.com/in/suryaprakash-j-1a9897257/
+- 🧑‍💻 GitHub: https://github.com/suryaj47
 
 ---
 
