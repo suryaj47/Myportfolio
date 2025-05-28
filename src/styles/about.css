@@ -1,4 +1,3 @@
-/* about.css */
 .about-section {
   padding: 4rem 2rem;
   background-color: #e6f2ff;
@@ -12,21 +11,27 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  flex-direction: row; /* ensures image is left */
-}
+  flex-direction: row; }
 
 .about-image {
-  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 4px solid #000;
+  background-color: #f0f0f0;
 }
 
 .about-image img {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #007BFF;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-position: center 50%;
+  transform: scale(0.95);
 }
+
 
 .about-text {
   max-width: 600px;

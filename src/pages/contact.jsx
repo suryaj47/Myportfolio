@@ -2,7 +2,9 @@ import React, { useRef, useState } from 'react';
 
 import '../styles/contact.css';
 import emailjs from 'emailjs-com';
-import { FaGithub, FaLinkedin, FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp, FaPhoneAlt,FaEnvelope } from 'react-icons/fa';
+
+
 
 const Contact = () => {
   const form = useRef();
@@ -42,7 +44,11 @@ const Contact = () => {
 
   return (
     <section className="contact-section">
-      <h2 className="contact-title">Contact Me</h2>
+   <h2 className="contact-title">
+  <FaEnvelope style={{ marginRight: '10px', verticalAlign: 'middle' }} />
+  Contact Me
+</h2>
+
       <div className="contact-container">
         <form className="contact-form" ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Your Name" required />

@@ -1,4 +1,4 @@
-/* home.css */
+
 .home-section {
   display: flex;
   justify-content: center;
@@ -75,20 +75,28 @@
 }
 
 .home-image {
-  flex: 1;
-  min-width: 300px;
-  display: flex;
-  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 4px solid #000;
+  background-color: #f0f0f0;
 }
 
 .home-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center 50%;
+  transform: scale(0.95);
 }
+
 
 .typewriter {
   font-weight: bold;
   color: #007BFF;
 }
+
+

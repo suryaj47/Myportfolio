@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImage from '../assets/bg.jpg';
+import dpImage from '../assets/dp.png';
 import { TypeAnimation } from 'react-type-animation';
 import '../styles/home.css';
 
@@ -23,12 +23,15 @@ const Home = () => {
               className="typewriter"
             />
           </h2>
-          <p className="home-description">Passionate about building scalable software and exploring AI innovations.</p>
-          <p className="home-description">Dedicated to learning, problem-solving, and making impactful digital solutions.</p>
+          <p className="home-description">Passionate about building scalable software, exploring bold ideas, and solving real-world problems — whether it’s through code, design, or pure curiosity. </p>
+          <p className="home-description">  Outside of tech, I'm a spirited college student who thrives on creativity, teamwork, and making the most of every moment.
+          </p>
+         
           <a href="/resume.pdf" download className="home-btn">Download Resume</a>
         </div>
         <div className="home-image">
-          <img src={bgImage} alt="Tam" />
+          <img src={dpImage} alt="SURYAPRAKASHJ" />
+          
         </div>
       </div>
     </section>
