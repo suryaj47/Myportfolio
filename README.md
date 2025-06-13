@@ -7,7 +7,7 @@ A modern, responsive personal portfolio showcasing my projects, skills, achievem
 ## 🚀 Tech Stack
 
 - **Frontend:** React.js, HTML, CSS, JavaScript
-- **Backend :** Node.js / Express
+- **Backend :** Node.js / Express / Emailjs
 - **Database:** MongoDB (Local)
 - **Others:** Git & GitHub, React Icons, CSS Modules
 
