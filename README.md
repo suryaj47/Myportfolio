@@ -97,7 +97,7 @@ A modern, responsive personal portfolio showcasing my projects, skills, achievem
 
 ## 📫 Contact
 
-- 📧 Email: suryaj4747.email@example.com  
+- 📧 Email: suryaj4747@gmail.com  
 - 🔗 LinkedIn: https://www.linkedin.com/in/suryaprakash-j-1a9897257/
 - 🧑‍💻 GitHub: https://github.com/suryaj47
 
